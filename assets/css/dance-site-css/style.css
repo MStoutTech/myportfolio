@@ -1,0 +1,239 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+ul {
+  list-style: none;
+  padding-left:0;
+}
+
+span {
+  display: block;
+}
+
+.logo {
+  width: 100px;
+  border: 1px solid black;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 40px;
+  background: white;
+  text-align: center;
+  padding-top:10px;
+  color: black;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border: 1px solid black;
+}
+
+.card-icon {
+  width: 45px;
+  height: 45px;
+  border: 1px solid black;
+}
+
+.beautician-headshot {
+  width: 150px;
+  height: 230px;
+  border: 1px solid black;
+}
+
+.mosaic-square {
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.mosaic-portrait {
+  width: 120px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 100;
+}
+strong {
+  font-size: 30px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+header > nav {
+  display: block;
+}
+
+header > nav > * {
+  float: left;
+}
+
+header >nav >ul {
+  width: 30%;
+  margin: auto;
+  min-width: 800px;
+}
+header > nav > ul > * {
+  float: left;
+  width: 12%;
+}
+header > nav > .logo {
+  margin-right: 20px;
+}
+
+main {
+  background-color:rgb(122, 100, 108);
+  background-image: url("../images/dance-site-images/hero1.PNG");
+  background-size: cover;
+  color: white;
+  height: 700px;
+  padding: 100px 80px;
+}
+
+main > *{
+  float: left;
+}
+
+main > section:first-of-type {
+  width:60%;
+}
+
+main > section > section+section {
+  background: black;
+  height: 240px;
+  width: 60%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+main > section > section+section >p {
+  font-size: 18px;
+  line-height: 35px;
+}
+
+main > section > section+section >h5 {
+  border-left: 2px solid white;
+  padding-left: 10px;
+}
+main > section + section {
+  width: 40%;
+}
+main > section + section > span {
+  transform: rotate(.25turn);
+  height: 400px;
+}
+main > section + section > section {
+  float: right;
+}
+main > section + section > section >* {
+  float:left;
+}
+
+body > section:first-of-type {
+  padding: 40px;
+}
+body > section:first-of-type >* {
+  width:25%;
+  float:left;
+  margin: 20px;
+}
+body > section:first-of-type > section >* {
+  margin: 20px auto;
+  text-align: center;
+}
+
+body > section:nth-child(4) {
+  background-color: lightgray;
+  padding: 40px;
+}
+body > section:nth-child(4)> *{
+  width: 37.5%;
+  float: left;
+  margin: 40px ;
+}
+body > section:nth-child(4)> section:first-of-type {
+  margin-left:10%;
+}
+body > section:nth-child(5) {
+  padding:40px;
+}
+body > section:nth-child(5) > * {
+  float: left;
+  width:25%;
+  margin: 20px;
+}
+body > section:nth-child(5) > * > div {
+  margin-left:30px;
+}
+body > section:nth-child(5) > * > hgroup {
+  background: black;
+  color: white;
+  text-align: center;
+  transform: translateY(-40px);
+}
+
+body > section:nth-child(6) {
+  background-color: lightgrey;
+  background-image: url("../images/dance-site-images/dancepromo.png");
+  background-size: cover;
+  margin: 0 40px;
+  padding: 80px;
+}
+
+body > section:nth-child(7) {
+  padding: 40px 80px;
+}
+
+body > section:nth-child(7) > *{
+  margin: 20px 10%;
+  text-align: center;
+}
+body > section:nth-child(7) > section {
+  padding: 10px 12%;
+}
+body > section:nth-child(7) > section > * {
+  float: left;
+  width: 20%;
+  margin:20px;
+}
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
