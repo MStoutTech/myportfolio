@@ -1,3 +1,6 @@
+@import url(../fontawesome-all.min.css);
+
+
 /* Box Model Hack */
 * {
   box-sizing: border-box;
