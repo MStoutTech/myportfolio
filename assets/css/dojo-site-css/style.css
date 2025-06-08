@@ -23,18 +23,17 @@
 
 body {
   background-color:lightgray;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .icon {
-  background-color: rgb(255, 145, 0);
-  height:25px;
-  width:25px;
+  height:30px;
+  width:45px;
+  padding: 0px 10px;
 }
 
 .dish {
-  height: 200px;
-  width: 100px;
-  background-color: rgb(255, 145, 0);
+  height: 250px;
 }
 
 .video {
@@ -46,12 +45,23 @@ body {
 button {
   background-color: rgb(255, 145, 0);
   color: white;
+  display: inline-block;
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border:none;
+  margin: 0 auto;
 }
-
+button:hover {
+  cursor: pointer;
+}
 .subtitle, h4 {
   color: rgb(255, 145, 0);
 }
 
+p {
+  line-height: 2;
+}
 ul {
   list-style: none;
 }
@@ -66,6 +76,10 @@ body > section:last-of-type > div.profile {
   color: goldenrod;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: serif;
+}
+
 h2, h3 {
   font-size: 30px;
 }
@@ -74,6 +88,12 @@ h4, h6 {
 }
 h6, h3{
   margin:0;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
 }
 /******************************************
 /* LAYOUT
@@ -88,21 +108,30 @@ nav > *, nav > ul > * {
   float: left;
 }
 nav ul {
-  width:700px;
+  margin: 20px 40px;
 }
 nav li {
-  width: 100px;
+  width: fit-content;
+  padding: 0 20px 0 20px;
 }
 main {
-  height: 400px;
+  height: 700px;
+  padding-top: 10%;
+  width: 50%;
 }
 main > * {
   margin-left: 50px;
-  width: 50%;
+}
+main > button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left:30%;
+  width: 25%;
 }
 main ul {
   height: 40px;
   padding: 0;
+  margin-left: 25%;
 }
 main ul > * {
   float: left;
@@ -123,75 +152,90 @@ body > section:first-of-type {
   background: white;
   background-image:url("../images/dojo-site-images/dojostory.png");
   background-size: 100% auto;
-  height: 400px;
-  padding-top: 70px;
+  height: fit-content;
+  padding-top: 180px;
+  padding-bottom: 200px;
 }
 
 body > section:first-of-type > * {
-  margin-left: 20%;
-  width:45%;
+  margin-left: 33.33%;
+  width:40%;
 }
 
-body > section:nth-child(4) {
-  height: 700px;
+body > section:first-of-type > button {
+  width: fit-content;
+  padding: 5px 20px;
 }
-body > section:nth-child(4) > * {
+
+body > section:nth-child(3) {
+  height: fit-content;
+  padding-bottom: 40px;
+}
+body > section:nth-child(3) > * {
   width: 80%;
   margin: auto;
-  padding: 0;
-  text-align: center;
-}
-body > section:nth-child(4) * {
   text-align: center;
 }
 
-body > section:nth-child(4) > ul {
-  height: 20px;
+body > section:nth-child(3) > section {
+  padding-left: 5%;
+}
+
+body > section:nth-child(3) > hgroup {
+  margin-top: 80px;
+}
+
+body > section:nth-child(3) * {
+  text-align: center;
+}
+
+body > section:nth-child(3) > ul {
+  height: fit-content;
   width: 50%;
 }
-body > section:nth-child(4) > ul *{
+body > section:nth-child(3) > ul *{
   float: left;
   border-bottom: 2px solid darkgrey;
   width:20%;
   text-align:center;
 }
-body > section:nth-child(4) > section > * {
+body > section:nth-child(3) > section > * {
   float: left;
-  margin: 20px 20px 0 0;
+  margin: 38px 20px;
   width: 20%;
 }
-body > section:nth-child(5) {
+body > section:nth-child(4) {
   height: 800px;
   background: rgb(234, 234, 236);
   padding-top: 20px;
 }
 
-body > section:nth-child(5) > *, body > section:nth-child(5) hgroup >* {
+body > section:nth-child(4) > *, body > section:nth-child(4) hgroup >* {
   text-align: center;
   margin: auto;
   display: block;
   padding:0;
 }
 
-body >section:nth-child(5) hgroup {
+body >section:nth-child(4) hgroup {
   margin-top: 40px;
   margin-bottom: 20px;
 }
-body >section:nth-child(5) > section {
+body >section:nth-child(4) > section {
   height: 100px;
 }
-body >section:nth-child(5) > section >ul {
+body >section:nth-child(4) > section >ul {
   width: 50%;
   margin:auto;
   padding-top:20px;
 }
-body >section:nth-child(5) > section > ul >*{
+body >section:nth-child(4) > section > ul >*{
   float:left;
   height: 80px;
   margin-right: 20px;
   width: 45%;
 }
-body >section:nth-child(5) > section > ul > li >*{
+body >section:nth-child(4) > section > ul > li >*{
   display:block;
   margin: 0;
 }

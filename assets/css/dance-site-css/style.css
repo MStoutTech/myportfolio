@@ -1,4 +1,4 @@
-@import url(../fontawesome-all.min.css);
+
 
 /* Box Model Hack */
 * {
@@ -7,12 +7,12 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
 }
 
 .clear {
