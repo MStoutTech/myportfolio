@@ -24,7 +24,10 @@
 /*******************************************/
 
 body {
-
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 3px;
 }
 
 ul {
@@ -32,13 +35,17 @@ ul {
   padding-left:0;
 }
 
+header a {
+  text-decoration: none;
+  color: black;
+} 
+
 span {
   display: block;
 }
 
 .logo {
-  width: 100px;
-  border: 1px solid black;
+  width: 80px;
 }
 
 .arrow {
@@ -87,13 +94,37 @@ span {
 h1 {
   font-size: 60px;
   font-weight: 100;
+  margin: .2em 0;
 }
 strong {
   font-size: 30px;
 }
+
+.info-paragraph {
+  font-family: sans-serif;
+  letter-spacing: normal;
+  font-size: .8em;
+  line-height: 2;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 0;
+  font-size: .9em;
+  letter-spacing: 1px;
+  background-color: white;
+}
+
+.button-dark {
+  color: white;
+  background-color: black;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
+header {
+  padding: 10px;
+}
 
 
 header > nav {
@@ -104,25 +135,36 @@ header > nav > * {
   float: left;
 }
 
+header > nav .logo, header > nav span {
+  width: 20%;
+}
+
 header >nav >ul {
-  width: 30%;
-  margin: auto;
+  width: 60%;
+  margin: 30px auto 0 auto;
   min-width: 800px;
+  text-align: center;
+}
+
+header > nav > span {
+  padding-right: 40px;
+  margin-top: 30px;
+  text-align: right;
 }
 header > nav > ul > * {
   float: left;
-  width: 12%;
+  width: 16.66%;
 }
-header > nav > .logo {
-  margin-right: 20px;
-}
+// header > nav > .logo {
+//   margin-right: 20px;
+// }
 
 main {
   background-color:rgb(122, 100, 108);
   background-image: url("../images/dance-site-images/hero1.PNG");
   background-size: cover;
   color: white;
-  height: 700px;
+  height: fit-content;
   padding: 100px 80px;
 }
 
@@ -136,27 +178,38 @@ main > section:first-of-type {
 
 main > section > section+section {
   background: black;
-  height: 240px;
-  width: 60%;
-  padding: 20px;
-  margin-top: 20px;
+  height: fit-content;
+  width: 40%;
+  padding: 20px 0 40px 0;
+  margin-top: 5em;
 }
 
 main > section > section+section >p {
   font-size: 18px;
   line-height: 35px;
+  padding: 0 20px 0 23px;
+}
+
+main > section > section+section > button {
+  margin-left: 23px;
 }
 
 main > section > section+section >h5 {
-  border-left: 2px solid white;
-  padding-left: 10px;
+  margin: 0;
+  border-left: 3px solid white;
+  padding: 20px 20px;
 }
 main > section + section {
   width: 40%;
+  height: fit-content;
 }
 main > section + section > span {
   transform: rotate(.25turn);
   height: 400px;
+  width: 100%;
+  min-width: 428px;
+  margin: 100px 40px;
+  text-align: center;
 }
 main > section + section > section {
   float: right;

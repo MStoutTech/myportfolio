@@ -33,7 +33,7 @@ body {
 }
 
 .dish {
-  height: 250px;
+  aspect-ratio: 1 / 1.30;
 }
 
 .video {
@@ -81,13 +81,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2, h3 {
-  font-size: 30px;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 h4, h6 {
   font-size: 18px;
 }
 h6, h3{
-  margin:0;
+  margin:20px 0;
 }
 
 ul > li > a {
@@ -193,11 +195,25 @@ body > section:nth-child(3) > ul {
   height: fit-content;
   width: 50%;
 }
-body > section:nth-child(3) > ul *{
+body > section:nth-child(3) > ul > *{
   float: left;
   border-bottom: 2px solid darkgrey;
   width:20%;
   text-align:center;
+  padding-bottom: 10px;
+}
+
+body > section:nth-child(3) > ul > .selected-class{
+  border-bottom-color: rgb(255, 145, 0);
+}
+
+.selected-class {
+  color: rgb(255, 145, 0);
+
+}
+
+body > section:nth-child(3) > ul > li > a{
+  text-align: left;
 }
 body > section:nth-child(3) > section > * {
   float: left;
@@ -212,7 +228,7 @@ body > section:nth-child(4) {
 
 body > section:nth-child(4) > *, body > section:nth-child(4) hgroup >* {
   text-align: center;
-  margin: auto;
+  margin: 20px auto;
   display: block;
   padding:0;
 }
