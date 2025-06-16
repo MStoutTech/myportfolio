@@ -66,28 +66,24 @@ span {
 }
 
 .card-icon {
-  width: 45px;
+  width: 55px;
   height: 45px;
-  border: 1px solid black;
 }
 
 .beautician-headshot {
-  width: 150px;
-  height: 230px;
-  border: 1px solid black;
+  width: 250px;
+  height: fit-content;
 }
 
 .mosaic-square {
   width: 120px;
   height: 120px;
-  border: 1px solid black;
   margin: 10px;
 }
 
 .mosaic-portrait {
   width: 120px;
-  height: 200px;
-  border: 1px solid black;
+  height: 215px;
   margin: 10px;
 }
 
@@ -117,6 +113,10 @@ button {
 .button-dark {
   color: white;
   background-color: black;
+}
+
+.team-title {
+  font-size: .7em;
 }
 
 /******************************************
@@ -219,12 +219,12 @@ main > section + section > section >* {
 }
 
 body > section:first-of-type {
-  padding: 40px;
+  padding: 40px 120px;
 }
 body > section:first-of-type >* {
-  width:25%;
+  width:33.33%;
   float:left;
-  margin: 20px;
+  padding: 20px 50px;
 }
 body > section:first-of-type > section >* {
   margin: 20px auto;
@@ -243,22 +243,36 @@ body > section:nth-child(4)> *{
 body > section:nth-child(4)> section:first-of-type {
   margin-left:10%;
 }
+
+body > section:nth-child(4)> section:first-of-type > button {
+  margin-top: 30px;
+}
+
+body > section:nth-child(4)> section .video {
+  padding-top: 40px;
+}
 body > section:nth-child(5) {
-  padding:40px;
+  padding:60px 120px;
 }
 body > section:nth-child(5) > * {
   float: left;
-  width:25%;
-  margin: 20px;
+  width:33.33%;
+  padding: 40px;
+  padding-bottom:0;
 }
+
+
 body > section:nth-child(5) > * > div {
-  margin-left:30px;
+  margin:0 auto;
 }
 body > section:nth-child(5) > * > hgroup {
+  width: 200px;
+  padding: 5px 20px 20px 20px;
   background: black;
   color: white;
   text-align: center;
   transform: translateY(-40px);
+  margin: 0 auto;
 }
 
 body > section:nth-child(6) {
@@ -266,7 +280,7 @@ body > section:nth-child(6) {
   background-image: url("../images/dance-site-images/dancepromo.png");
   background-size: cover;
   margin: 0 40px;
-  padding: 80px;
+  padding: 80px 600px 80px 100px;
 }
 
 body > section:nth-child(7) {
@@ -282,8 +296,14 @@ body > section:nth-child(7) > section {
 }
 body > section:nth-child(7) > section > * {
   float: left;
-  width: 20%;
-  margin:20px;
+  width: 33.33%;
+  margin:20px auto;
+  padding: 10px;
+}
+
+body > section:nth-child(7) > section > section > div {
+  margin: 10px auto;
+
 }
 footer {
 
