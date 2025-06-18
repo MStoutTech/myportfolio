@@ -29,12 +29,15 @@ body {
   font-family: 'Lato','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 300;
   word-spacing: 2px;
+  letter-spacing: .5px;
 }
 .small-image {
   width:100%;
-  background-color: white;
-
 }
+main > section > .small-image {
+  background-color: white;
+}
+
 .card {
   width: 250px;
   height: 198px;
@@ -73,7 +76,7 @@ a {
 }
 
 button {
-  padding: 10px 30px;
+  padding: 15px 30px;
   font-size: .8em;
 }
 
@@ -83,6 +86,17 @@ p{
 .subtitle {
   font-size: .7em;
   font-weight: 400;
+}
+
+.dark-button {
+  background-color: #171822;
+  color: lightgray;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: .8em;
+}
+.dark-button:hover {
+  background-color:#2a2c3b;
 }
 /******************************************
 /* LAYOUT
@@ -215,18 +229,22 @@ border-bottom: 0px;
 }
 
 .solution-based-section > section:first-of-type, .approach-section > section:first-of-type, .account-section > section > section:first-of-type {
-  height: 500px;
+  aspect-ratio: 1/1;
   width: 35%;
-  background-color: #cbcde2;
-  margin-right: 11%;
 }
 
 .solution-based-section > section+section, .approach-section > section+section, .account-section > section > section+section {
-  height: 500px;
+  height: fit-content;
+  margin-left: 80px;
+  padding-top: 40px;
+}
+
+.solution-based-section button {
+  margin-top: 40px;
 }
 
 .approach-section > section:first-of-type .small-image, .account-section > section > section:first-of-type .small-image {
-  margin: 185px 0 0 30%;
+  margin-top: 40px;
 }
 
 .account-section > hgroup {
@@ -234,7 +252,11 @@ border-bottom: 0px;
   margin: auto;
   text-align: center;
 }
-
+.account-section > section {
+  display: block;
+  width: 100%;
+  height: fit-content;
+}
 .account-section > button {
   margin-left: 45%;
   margin-top: 20px;
@@ -247,10 +269,16 @@ border-bottom: 0px;
 .account-section li > * {
   float: left;
   width: 25px;
+  border: none;
 }
 .account-section li > hgroup {
   width: 95%;
   padding-left: 20px;
+}
+.account-section li > hgroup > p {
+  padding: 5px 0;
+  line-height: 1.2;
+  margin: 5px 0;
 }
 
 .account-section nav > *{
@@ -260,13 +288,14 @@ border-bottom: 0px;
 .technologies-section > section {
   background-color: #171822;
   height: 400px;
+  overflow: hidden;
 }
 
 .technologies-section > hgroup {
   width: 250px;
 }
 .wide-card {
-  width: 250px;
+  width: 300px;
   height: 150px;
   background-color: white;
   border: 1px solid white;
@@ -274,6 +303,28 @@ border-bottom: 0px;
   float: left;
   margin: 20px;
   padding: 10px;
+  font-size: .8em;
+}
+.wide-card > hgroup >p {
+  line-height: 1.2;
+}
+
+.wide-card > .icon {
+  border: none;
+  width: 30px;
+}
+
+.card-row {
+  width: 1360px;
+  height: 190px;
+  overflow: hidden;
+}
+.left-shift {
+  transform: translate(-40px, 0);
+}
+.view-all h4{
+  margin: 60px auto 0 auto;
+  text-align: center;
 }
 
 .testimonals-section {
@@ -283,38 +334,84 @@ border-bottom: 0px;
 .testimonals-section > section:first-of-type {
   height: 200px;
   padding-top: 30px;
+  margin: 0 auto;
 }
 .testimonals-section > section:first-of-type > * {
   float: left;
 }
-.testimonals-section > section blockquote{
-  width: 80%;
+
+.testimonals-section > section:first-of-type > div:first-child{
+  margin-left: 8%;
+}
+
+.testimonals-section > section:first-of-type > .icon {
+  border-radius: 50%;
+  width: 50px;
+  margin-top: 50px;
+  padding-top: 7px;
+}
+
+.testimonals-section > section:first-of-type > .icon >span {
   font-size: 24px;
+  font-weight: 400;
+  margin: 20px 0 0 15px;
+}
+
+.testimonals-section > section blockquote{
+  width: 70%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2;
 }
 .testimonals-section > section:last-of-type, .testimonals-section > span {
   display:block;
-  width:200px;
+  width:220px;
   margin:auto;
 }
 .testimonals-section > span {
   width:400px;
+  text-align: center;
+}
+
+.testimonals-section > section > hgroup{
+  text-align: center;
+}
+.testimonals-section > section > hgroup > p {
+  margin-top: 0;
 }
 
 .order-now-section {
   background-color: #171822;
-  height: 250px;
+  background: linear-gradient(to right,#171822,#28293a);
+  height: 230px;
   color: lightgray;
-  padding-left:25%;
+  padding-left:250px;
 }
 .order-now-section > *{
   float: left;
 }
 .order-now-section > hgroup {
-  width:30%;
+  width:50%;
+}
+
+.order-now-section > button {
+  margin-top: 10px;
+}
+
+.order-now-section > button + button {
+  margin-left: 30px;
 }
 footer {
   font-size: 14px;
-  height: 500px;
+  height: 450px;
+}
+footer a {
+  color:#2a2c3b;
+}
+
+footer a:hover{
+  color: #171822;
+  font-weight: 400;
 }
 footer >* {
   float: left;
@@ -329,7 +426,7 @@ footer > section:first-of-type > ul > li >*{
   float: left;
 }
 footer > section:first-of-type > ul > li > p {
-  width: 200px;
+  width: 75%;
   margin-left: 20px;
 }
 footer > section:first-of-type + section ul > * {
@@ -340,6 +437,34 @@ footer > section:first-of-type + section ul > * {
 footer > section:last-of-type > section > * {
   float: left;
   margin-right: 20px;
+}
+footer .icon {
+  width: 25px;
+  border: none;
+}
+
+footer > section:first-of-type > h5 {
+  margin-bottom: 0;
+}
+
+footer > section:first-of-type > p {
+  margin-top: 0;
+}
+
+footer > section:first-of-type li > p {
+  margin-top: 0;
+
+}
+footer section nav li {
+  margin-bottom: 20px;
+}
+
+.top-space-1 {
+  margin-top: 1px;
+}
+
+.top-space-2 {
+  margin-top: 2px;
 }
 /******************************************
 /* ADDITIONAL STYLES
